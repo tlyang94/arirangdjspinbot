@@ -1,0 +1,14 @@
+# 敏感環境變數檔案
+.env
+
+
+# Python 暫存檔與快取
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虛擬環境資料夾
+venv/
+env/
+.venv/
+.DS_Store
