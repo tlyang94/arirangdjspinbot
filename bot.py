@@ -1,11 +1,28 @@
 import os
 import json
+import threading
+from flask import Flask
 import discord
 from discord import app_commands
 from discord.ext import commands
 from dotenv import load_dotenv
 
-＃載入本機 .env 檔案（Render 部署時會自動讀取後台設定的環境變數）
+#建立簡單的 Web 伺服器供 Render 心跳檢查 =====
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run_web():
+    # 讀取 Render 自動分配的 PORT，若無則預設 8080
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
+
+# ===== 2. 啟動 Web 伺服器線程 =====
+threading.Thread(target=run_web, daemon=True).start()
+
+# ===== 3. 以下維持原本的 Bot 程式碼 =====
 load_dotenv()
 TOKEN = os.getenv('DC_TOKEN')
 
