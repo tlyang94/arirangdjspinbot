@@ -62,8 +62,9 @@ async def on_ready():
 
 # ==================== 指令 1：/song (搜尋單曲) ====================
 @bot.tree.command(name="song", description="查詢歌曲演唱紀錄")
-@app_commands.describe(song_name="輸入歌曲名稱 (關鍵字皆可)")
+@app_commands.describe(song_name="輸入歌曲名稱關鍵字")
 async def check_song(interaction: discord.Interaction, song_name: str):
+    await interaction.response.defer()
     matched_key = None
     query = song_name.lower().strip()
     
@@ -80,7 +81,7 @@ async def check_song(interaction: discord.Interaction, song_name: str):
             break
             
     if not matched_key:
-        await interaction.response.send_message(f"❌ 找不到歌曲 `{song_name}` 的演唱紀錄。", ephemeral=True)
+        await interaction.followup.send((f"❌ 找不到歌曲 `{song_name}` 的演唱紀錄。", ephemeral=True)
         return
 
     info = song_data[matched_key]
@@ -103,13 +104,14 @@ async def check_song(interaction: discord.Interaction, song_name: str):
         history_text += f"• `{h.get('date')}` | {city_display}{note_display}\n"
         
     embed.add_field(name="演唱場次", value=history_text if history_text else "尚無場次紀錄", inline=False)
-    await interaction.response.send_message(embed=embed)
+    await interaction.followup.send(embed=embed)
 
 
 # ==================== 指令 2：/album (搜尋專輯) ====================
 @bot.tree.command(name="album", description="查詢特定專輯曲目的演唱城市與次數")
 @app_commands.describe(album_name="輸入專輯名稱 (關鍵字皆可)")
 async def check_album(interaction: discord.Interaction, album_name: str):
+    await interaction.response.defer()
     query = album_name.lower().strip()
     matched_songs = []
     matched_album_display = ""
@@ -134,7 +136,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
             matched_songs.append((song_display, info.get("count", 0), history))
 
     if not matched_songs:
-        await interaction.response.send_message(f"❌ 找不到與 `{album_name}` 相關的專輯歌曲資料。", ephemeral=True)
+        aawait interaction.followup.send(f"❌ 找不到與 `{album_name}` 相關的專輯歌曲資料。", ephemeral=True)
         return
 
     embed = discord.Embed(
@@ -160,13 +162,14 @@ async def check_album(interaction: discord.Interaction, album_name: str):
         song_list_text = song_list_text[:3950] + "\n\n*(內容過長，已截斷部分場次...)*"
 
     embed.description = song_list_text
-    await interaction.response.send_message(embed=embed)
+    await interaction.followup.send(embed=embed)
 
 
 # ==================== 指令 3：/city (搜尋城市，含專輯名稱) ====================
-@bot.tree.command(name="city", description="查詢特定城市演唱歌曲 (含專輯資訊)")
+@bot.tree.command(name="city", description="查詢特定城市演唱歌曲")
 @app_commands.describe(city_name="輸入城市名稱")
 async def check_city(interaction: discord.Interaction, city_name: str):
+    await interaction.response.defer()
     query = city_name.lower().strip()
     matched_results = []
     matched_city_display = ""
@@ -196,7 +199,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
             matched_results.append((song_display, album_display, city_records))
 
     if not matched_results:
-        await interaction.response.send_message(f"❌ 找不到在城市 `{city_name}` 的演唱紀錄。", ephemeral=True)
+        await interaction.followup.send(f"❌ 找不到在城市 `{city_name}` 的演唱紀錄。", ephemeral=True)
         return
 
     embed = discord.Embed(
@@ -217,8 +220,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
         city_list_text = city_list_text[:3950] + "\n\n*(內容過長，已截斷部分紀錄...)*"
 
     embed.description = city_list_text
-    await interaction.response.send_message(embed=embed)
-
+    await interaction.followup.send(embed=embed)
 # 啟動 Bot
 if TOKEN:
     bot.run(TOKEN)
