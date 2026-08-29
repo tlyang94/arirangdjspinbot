@@ -7,37 +7,47 @@ from discord import app_commands
 from discord.ext import commands
 from dotenv import load_dotenv
 
-#建立簡單的 Web 伺服器供 Render 心跳檢查 =====
+# ===== 1. 建立 Web 伺服器供 Render 心跳檢查 =====
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Bot is alive!"
+    # 必須顯式回傳 200 狀態碼，確保 Render 健康檢查成功
+    return "Bot is alive!", 200
 
 def run_web():
     # 讀取 Render 自動分配的 PORT，若無則預設 8080
     port = int(os.environ.get("PORT", 8080))
-    app.run(host='0.0.0.0', port=port)
+    # 關閉 debug 模式與自動重載，避免執行緒重複建立
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
 
-# ===== 2. 啟動 Web 伺服器線程 =====
-threading.Thread(target=run_web, daemon=True).start()
+def keep_alive():
+    # 在背景執行緒啟動 Web 伺服器
+    t = threading.Thread(target=run_web)
+    t.daemon = True
+    t.start()
 
-# ===== 3. 以下維持原本的 Bot 程式碼 =====
+# ===== 2. 初始化與環境變數配置 =====
 load_dotenv()
-TOKEN = os.getenv('DC_TOKEN')
+# 優先讀取 DC_TOKEN，若不存在則嘗試讀取 DISCORD_TOKEN
+TOKEN = os.getenv('DC_TOKEN') or os.getenv('DISCORD_TOKEN')
 
-# 1. 讀取歌曲 JSON 資料庫
+# 讀取歌曲 JSON 資料庫
 def load_song_data():
-    with open('spindata.json', 'r', encoding='utf-8') as f:
-        return json.load(f)
+    try:
+        with open('spindata.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"❌ 讀取 spindata.json 失敗: {e}")
+        return {}
 
 song_data = load_song_data()
 
-# 2. 初始化 Discord Bot
+# 初始化 Discord Bot
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# 3. 統一工具函式：優先順序 default > 中文 > 韓文 > 英文 > fallback
+# 統一工具函式：優先順序 default > 中文 > 韓文 > 英文 > fallback
 def get_display_text(default_val="", zh_val="", kr_val="", en_val="", fallback=""):
     if default_val and str(default_val).strip():
         return default_val
@@ -49,15 +59,15 @@ def get_display_text(default_val="", zh_val="", kr_val="", en_val="", fallback="
         return en_val
     return fallback
 
-# 4. Bot 啟動事件：自動同步斜線指令
+# Bot 啟動事件：自動同步斜線指令
 @bot.event
 async def on_ready():
-    print(f'已成功登入為 {bot.user}')
+    print(f'✅ 已成功登入為：{bot.user}')
     try:
         synced = await bot.tree.sync()
-        print(f"已成功同步 {len(synced)} 個斜線指令！")
+        print(f"✅ 已成功同步 {len(synced)} 個斜線指令！")
     except Exception as e:
-        print(f"同步斜線指令失敗: {e}")
+        print(f"❌ 同步斜線指令失敗: {e}")
 
 
 # ==================== 指令 1：/song (搜尋單曲) ====================
@@ -209,7 +219,6 @@ async def check_city(interaction: discord.Interaction, city_name: str):
 
     city_list_text = ""
     for song_display, album_display, records in matched_results:
-        # 歌名後面標示出專輯名稱
         city_list_text += f"• **{song_display}** `[{album_display}]`\n"
         for r in records:
             note_display = f" — *{r.get('note')}*" if r.get('note') else ""
@@ -221,8 +230,15 @@ async def check_city(interaction: discord.Interaction, city_name: str):
 
     embed.description = city_list_text
     await interaction.followup.send(embed=embed)
-# 啟動 Bot
-if TOKEN:
-    bot.run(TOKEN)
-else:
-    print("❌ 錯誤：未偵測到 DISCORD_TOKEN，請檢查環境變數設定。")
+
+
+# ===== 3. 主程式進入點 =====
+if __name__ == "__main__":
+    # 1. 啟動 Web 伺服器給 Render Health Check
+    keep_alive()
+    
+    # 2. 啟動 Discord Bot
+    if TOKEN:
+        bot.run(TOKEN)
+    else:
+        print("❌ 錯誤：未偵測到 DC_TOKEN 或 DISCORD_TOKEN，請檢查環境變數設定。")
