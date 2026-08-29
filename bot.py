@@ -136,7 +136,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
             matched_songs.append((song_display, info.get("count", 0), history))
 
     if not matched_songs:
-        aawait interaction.followup.send(f"❌ 找不到與 `{album_name}` 相關的專輯歌曲資料。", ephemeral=True)
+        await interaction.followup.send(f"❌ 找不到與 `{album_name}` 相關的專輯歌曲資料。", ephemeral=True)
         return
 
     embed = discord.Embed(
