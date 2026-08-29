@@ -81,7 +81,7 @@ async def check_song(interaction: discord.Interaction, song_name: str):
             break
             
     if not matched_key:
-        await interaction.followup.send((f"❌ 找不到歌曲 `{song_name}` 的演唱紀錄。", ephemeral=True)
+        await interaction.followup.send(f"❌ 找不到歌曲 `{song_name}` 的演唱紀錄。", ephemeral=True)
         return
 
     info = song_data[matched_key]
