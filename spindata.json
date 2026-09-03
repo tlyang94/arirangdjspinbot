@@ -113,7 +113,8 @@
     "count": 2,
     "history": [
       { "date": "2026-04-25", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
- { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "13週年Bonus" }
+     { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "13週年Bonus" },
+    { "date": "2026-09-01", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "작은 것들을 위한 시 (Boy With Luv)": {
@@ -154,7 +155,8 @@
     "count": 2,
     "history": [
       { "date": "2026-04-28", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" }
+      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" },
+    { "date": "2026-09-02", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "ON": {
@@ -203,7 +205,8 @@
     "count": 2,
     "history": [
       { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
-      { "date": "2026-08-10", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" }
+     { "date": "2026-08-10", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" },
+     { "date": "2026-09-01", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "So What": {
@@ -518,6 +521,14 @@
     "count": 1,
     "history": [
      { "date": "2026-08-28", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
+    ]
+  },
+  "Love Maze": {
+    "title": "Love Maze",
+    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "count": 1,
+    "history": [
+     { { "date": "2026-09-02", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   }
  
