@@ -114,7 +114,7 @@ async def check_song(interaction: discord.Interaction, song_name: str):
         history_text += f"• `{h.get('date')}` | {city_display}{note_display}\n"
         
     embed.add_field(name="演唱場次", value=history_text if history_text else "尚無場次紀錄", inline=False)
-    await interaction.followup.send(embed=embed)
+    await interaction.followup.send(embed=embed, ephemeral=True)
 
 
 # ==================== 指令 2：/album (搜尋專輯) ====================
@@ -172,7 +172,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
         song_list_text = song_list_text[:3950] + "\n\n*(內容過長，已截斷部分場次...)*"
 
     embed.description = song_list_text
-    await interaction.followup.send(embed=embed)
+    await interaction.followup.send(embed=embed, ephemeral=True)
 
 
 # ==================== 指令 3：/city (搜尋城市，含專輯名稱) ====================
@@ -229,7 +229,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
         city_list_text = city_list_text[:3950] + "\n\n*(內容過長，已截斷部分紀錄...)*"
 
     embed.description = city_list_text
-    await interaction.followup.send(embed=embed)
+    await interaction.followup.send(embed=embed, ephemeral=True)
 
 # ==================== 指令 4：/count (依演唱次數查詢歌曲清單) ====================
 @bot.tree.command(name="count", description="查詢指定演唱次數的所有歌曲與場次細節")
@@ -253,7 +253,7 @@ async def check_count(interaction: discord.Interaction, times: int):
             matched_songs.append((song_title, album_name, history))
 
     if not matched_songs:
-        await interaction.followup.send(f"❌ 找不到演唱次數恰好為 `{times}` 次的歌曲。", ephemeral=True)
+        await interaction.followup.send(f"❌ 找不到演唱次數為 `{times}` 次的歌曲。", ephemeral=True)
         return
 
     embed = discord.Embed(
@@ -282,7 +282,7 @@ async def check_count(interaction: discord.Interaction, times: int):
         result_text = result_text[:3950] + "\n\n*(內容過長，已截斷部分歌曲...)*"
 
     embed.description = result_text
-    await interaction.followup.send(embed=embed)
+    await interaction.followup.send(embed=embed, ephemeral=True)
 
 
 # ===== 3. 主程式進入點 =====
