@@ -231,6 +231,59 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     embed.description = city_list_text
     await interaction.followup.send(embed=embed)
 
+# ==================== 指令 4：/count (依演唱次數查詢歌曲清單) ====================
+@bot.tree.command(name="count", description="查詢指定演唱次數的所有歌曲與場次細節")
+@app_commands.describe(times="輸入要查詢的演唱次數 (例如: 1, 3, 5)")
+async def check_count(interaction: discord.Interaction, times: int):
+    await interaction.response.defer()
+    
+    if times < 0:
+        await interaction.followup.send("❌ 演唱次數不能為負數喔！", ephemeral=True)
+        return
+
+    matched_songs = []
+
+    # 搜尋符合指定次數的歌曲
+    for key, info in song_data.items():
+        song_count = info.get("count", 0)
+        if song_count == times:
+            song_title = get_display_text(info.get('title_zh'), info.get('title_kr'), info.get('title_en'), info.get('title'), key)
+            album_name = get_display_text(info.get('album_zh'), info.get('album_kr'), info.get('album_en'), info.get('album'), "未知專輯")
+            history = info.get("history", [])
+            matched_songs.append((song_title, album_name, history))
+
+    if not matched_songs:
+        await interaction.followup.send(f"❌ 找不到演唱次數恰好為 `{times}` 次的歌曲。", ephemeral=True)
+        return
+
+    embed = discord.Embed(
+        title=f"📊 演唱次數為 {times} 次的歌曲清單 (共 {len(matched_songs)} 首)",
+        color=discord.Color.gold()
+    )
+
+    result_text = ""
+    for song_title, album_name, history in matched_songs:
+        # 顯示歌名與專輯
+        result_text += f"🎵 **{song_title}** `[{album_name}]`\n"
+        
+        # 顯示該歌曲的所有演唱場次 (日期 + 城市)
+        if history:
+            for h in history:
+                city_display = get_display_text(h.get('city_zh'), h.get('city_kr'), h.get('city_en'), h.get('city'), "未知城市")
+                note_display = f" — *{h.get('note')}*" if h.get('note') else ""
+                result_text += f"  └ `{h.get('date')}` | {city_display}{note_display}\n"
+        else:
+            result_text += "  └ *(無詳細場次紀錄)*\n"
+            
+        result_text += "\n"
+
+    # 防止 Discord Embed 4096 字元上限溢出
+    if len(result_text) > 4000:
+        result_text = result_text[:3950] + "\n\n*(內容過長，已截斷部分歌曲...)*"
+
+    embed.description = result_text
+    await interaction.followup.send(embed=embed)
+
 
 # ===== 3. 主程式進入點 =====
 if __name__ == "__main__":
