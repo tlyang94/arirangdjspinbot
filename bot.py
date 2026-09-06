@@ -229,7 +229,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
                 if not matched_city_display:
                     matched_city_display = get_display_text(city_zh, city_kr, city_en, city_def, city_name)
                     
-                # 記錄單場資訊：(日期, 歌曲名稱, 專輯含發行日, 備註)
+                # 記錄單次演唱：(日期, 歌曲名稱, 專輯含發行日, 備註)
                 event_date = h.get('date', '9999-99-99')
                 note = h.get('note', '')
                 matched_records.append((event_date, song_display, album_with_release, note))
@@ -241,8 +241,13 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     # 按場次日期 (event_date) 由舊到新排序
     matched_records = sorted(matched_records, key=lambda x: x[0])
 
+    # 計算不重複的場次日期總數與演唱總首數
+    unique_dates = {r[0] for r in matched_records if r[0] != '9999-99-99'}
+    total_shows = len(unique_dates)
+    total_songs = len(matched_records)
+
     embed = discord.Embed(
-        title=f"🏙️ 城市－{matched_city_display}共 {len(matched_records)} 場",
+        title=f"🏙️ 城市－{matched_city_display} 共 {total_shows} 場 / {total_songs} 首",
         color=discord.Color.green()
     )
 
