@@ -159,8 +159,11 @@ async def check_album(interaction: discord.Interaction, album_name: str):
         await interaction.followup.send(f"❌ 找不到與 `{album_name}` 相關的專輯歌曲資料。", ephemeral=True)
         return
 
-    # 專輯內的曲目依發行年月/日期排序
+# 專輯內的曲目依發行年月/日期排序
     matched_songs = sorted(matched_songs, key=lambda x: x[3])
+
+    # 計算該專輯共演唱幾首歌曲
+    total_performed_songs = len(matched_songs)
 
     album_title_text = f"💿 專輯《{matched_album_display}》"
     if matched_release_yrmn:
@@ -169,6 +172,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
 
     embed = discord.Embed(
         title=album_title_text,
+        description=f"🎶 **該專輯共演唱了 {total_performed_songs} 首**\n\n",
         color=discord.Color.blue()
     )
 
@@ -287,7 +291,7 @@ async def check_count(interaction: discord.Interaction, times: int):
     matched_songs = sorted(matched_songs, key=lambda x: x[3])
 
     embed = discord.Embed(
-        title=f"📊 演唱次數為 {times} 次的歌曲清單 (共 {len(matched_songs)} 首)",
+        title=f"📊 演唱次數為 {times} 次的歌曲共 {len(matched_songs)} 首",
         color=discord.Color.gold()
     )
 
