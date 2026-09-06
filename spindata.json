@@ -7,9 +7,9 @@
     "release_yrmn": "2019-04",
     "count": 3,
     "history": [
-      { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
-      { "date": "2026-06-27", "city": "Madrid, Spain", "city_zh": "西班牙/馬德里", "city_kr": "마드리드", "note": "" },
- { "date": "2026-08-28", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
+      { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
+      { "date": "2026-06-27", "city": "Madrid, Spain", "city_zh": "西班牙|馬德里", "city_kr": "마드리드", "note": "" },
+ { "date": "2026-08-28", "city": Chicago, IL, US", "city_zh": "美國|伊利諾州|芝加哥", "city_kr": "시카고", "note": "" }
     ]
   },
   "I NEED U": {
@@ -19,8 +19,8 @@
     "release_yrmn": "2015-04",
     "count": 2,
     "history": [
-      { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
-      { "date": "2026-05-19", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" }
+      { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
+      { "date": "2026-05-19", "city": "Stanford, CA, US", "city_zh": "美國|加州|史丹佛", "city_kr": "샌프란시스코", "note": "" }
     ]
   },
   "Take Two": {
@@ -29,7 +29,7 @@
     "release_yrmn": "2023-06",
     "count": 1,
     "history": [
-      { "date": "2026-04-11", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "10週年紀念數位單曲" }
+      { "date": "2026-04-11", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "10週年紀念數位單曲" }
     ]
   },
   "DNA": {
@@ -38,8 +38,8 @@
     "release_yrmn": "2017-09",
     "count": 2,
     "history": [
-      { "date": "2026-04-11", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
-      { "date": "2026-08-16", "city": "Arlington, US", "city_zh": "美國/阿靈頓", "city_kr": "알링턴", "note": "" }
+      { "date": "2026-04-11", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
+      { "date": "2026-08-16", "city": "Arlington, TX, US", "city_zh": "美國|德州|阿靈頓", "city_kr": "알링턴", "note": "" }
     ]
   },
   "봄날 (Spring Day)": {
@@ -50,8 +50,8 @@
     "release_yrmn": "2017-02",
     "count": 2,
     "history": [
-      { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
-      { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" }
+      { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
+      { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" }
     ]
   },
   "RUN": {
@@ -61,8 +61,8 @@
     "release_yrmn": "2015-11",
     "count": 2,
     "history": [
-      { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
-      { "date": "2026-08-01", "city": "New Jersey, US", "city_zh": "美國/紐澤西", "city_kr": "뉴저지", "note": "" }
+      { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
+      { "date": "2026-08-01", "city": "East Rutherford, NJ, US", "city_zh": "美國|紐澤西州|東拉瑟福德", "city_kr": "뉴저지", "note": "" }
     ]
   },
   "Save ME": {
@@ -72,8 +72,8 @@
     "release_yrmn": "2016-05",
     "count": 2,
     "history": [
-      { "date": "2026-04-17", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "" },
-      { "date": "2026-07-07", "city": "London, UK", "city_zh": "英國/倫敦", "city_kr": "런던", "note": "" }
+      { "date": "2026-04-17", "city": "Tokyo, Japan", "city_zh": "日本|東京", "city_kr": "도쿄", "note": "" },
+      { "date": "2026-07-07", "city": "London, UK", "city_zh": "英國|倫敦", "city_kr": "런던", "note": "" }
     ]
   },
   "Crystal Snow": {
@@ -82,7 +82,7 @@
     "release_yrmn": "2017-12",
     "count": 1,
     "history": [
-      { "date": "2026-04-17", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "日本單曲輯" }
+      { "date": "2026-04-17", "city": "Tokyo, Japan", "city_zh": "日本|東京", "city_kr": "도쿄", "note": "日本單曲輯" }
     ]
   },
   "쩔어 (Dope)": {
@@ -93,9 +93,9 @@
     "release_yrmn": "2015-04",
     "count": 3,
     "history": [
-      { "date": "2026-04-18", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "" },
-      { "date": "2026-05-17", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
-      { "date": "2026-08-22", "city": "Toronto, Canada", "city_zh": "加拿大/多倫多", "city_kr": "토론토", "note": "" }
+      { "date": "2026-04-18", "city": "Tokyo, Japan", "city_zh": "日本|東京", "city_kr": "도쿄", "note": "" },
+      { "date": "2026-05-17", "city": "Stanford, CA, US", "city_zh": "美國|加州|史丹佛", "city_kr": "샌프란시스코", "note": "" },
+      { "date": "2026-08-22", "city": "Toronto, Canada", "city_zh": "加拿大|多倫多", "city_kr": "토론토", "note": "" }
     ]
   },
   "FOR YOU": {
@@ -104,7 +104,7 @@
     "release_yrmn": "2015-06",
     "count": 1,
     "history": [
-      { "date": "2026-04-18", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "日本單曲輯" }
+      { "date": "2026-04-18", "city": "Tokyo, Japan", "city_zh": "日本|東京", "city_kr": "도쿄", "note": "日本單曲輯" }
     ]
   },
   "Permission to Dance": {
@@ -113,9 +113,9 @@
     "release_yrmn": "2021-07",
     "count": 3,
     "history": [
-      { "date": "2026-04-25", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-05-23", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" },
-      { "date": "2026-08-15", "city": "Arlington, US", "city_zh": "美國/阿靈頓", "city_kr": "알링턴", "note": "" }
+      { "date": "2026-04-25", "city": "Tampa, FL, US", "city_zh": "美國|佛州|坦帕", "city_kr": "템파", "note": "" },
+      { "date": "2026-05-23", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" },
+      { "date": "2026-08-15", "city": "Arlington, TX, US", "city_zh": "美國|德州|阿靈頓", "city_kr": "알링턴", "note": "" }
     ]
   },
   "Magic Shop": {
@@ -124,9 +124,9 @@
     "release_yrmn": "2018-05",
     "count": 3,
     "history": [
-      { "date": "2026-04-25", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-     { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "13週年Bonus" },
-    { "date": "2026-09-01", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+      { "date": "2026-04-25", "city": "Tampa, FL, US", "city_zh": "美國|佛州|坦帕", "city_kr": "템파", "note": "" },
+     { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓|釜山", "city_kr": "부산", "note": "13週年Bonus" },
+    { "date": "2026-09-01", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "작은 것들을 위한 시 (Boy With Luv)": {
@@ -136,9 +136,9 @@
     "release_yrmn": "2019-04",
     "count": 3,
     "history": [
-      { "date": "2026-04-26", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-07-01", "city": "Brussels, Belgium", "city_zh": "比利時/布魯塞爾", "city_kr": "브뤼셀", "note": "" },
-      { "date": "2026-07-17", "city": "Paris, France", "city_zh": "法國/巴黎", "city_kr": "파리", "note": "" }
+      { "date": "2026-04-26", "city": "Tampa, FL, US", "city_zh": "美國|佛州|坦帕", "city_kr": "템파", "note": "" },
+      { "date": "2026-07-01", "city": "Brussels, Belgium", "city_zh": "比利時|布魯塞爾", "city_kr": "브뤼셀", "note": "" },
+      { "date": "2026-07-17", "city": "Paris, France", "city_zh": "法國|巴黎", "city_kr": "파리", "note": "" }
     ]
   },
   "Pied Piper": {
@@ -147,9 +147,9 @@
     "release_yrmn": "2017-09",
     "count": 3,
     "history": [
-      { "date": "2026-04-26", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" },
-      { "date": "2026-09-05", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+      { "date": "2026-04-26", "city": "Tampa, FL, US", "city_zh": "美國|佛州|坦帕", "city_kr": "템파", "note": "" },
+      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國|慕尼黑", "city_kr": "뮌헨", "note": "" },
+      { "date": "2026-09-05", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "Life Goes On": {
@@ -158,8 +158,8 @@
     "release_yrmn": "2020-11",
     "count": 2,
     "history": [
-      { "date": "2026-04-28", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-07-06", "city": "London, UK", "city_zh": "英國/倫敦", "city_kr": "런던", "note": "" }
+      { "date": "2026-04-28", "city": "Tampa, FL, US", "city_zh": "美國|佛州|坦帕", "city_kr": "템파", "note": "" },
+      { "date": "2026-07-06", "city": "London, UK", "city_zh": "英國|倫敦", "city_kr": "런던", "note": "" }
     ]
   },
   "뱁새 (Silver Spoon)": {
@@ -171,9 +171,9 @@
     "release_yrmn": "2015-11",
     "count": 3,
     "history": [
-      { "date": "2026-04-28", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" },
-    { "date": "2026-09-02", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+      { "date": "2026-04-28", "city": "Tampa, FL, US", "city_zh": "美國|佛州|坦帕", "city_kr": "템파", "note": "" },
+      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國|慕尼黑", "city_kr": "뮌헨", "note": "" },
+    { "date": "2026-09-02", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "ON": {
@@ -182,8 +182,8 @@
     "release_yrmn": "2020-02",
     "count": 2,
     "history": [
-      { "date": "2026-05-02", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
-      { "date": "2026-07-02", "city": "Brussels, Belgium", "city_zh": "比利時/布魯塞爾", "city_kr": "브뤼셀", "note": "" }
+      { "date": "2026-05-02", "city": "El Paso, TX, US", "city_zh": "美國|德州|艾爾帕索", "city_kr": "엘파소", "note": "" },
+      { "date": "2026-07-02", "city": "Brussels, Belgium", "city_zh": "比利時|布魯塞爾", "city_kr": "브뤼셀", "note": "" }
     ]
   },
   "Outro : Wings": {
@@ -192,9 +192,9 @@
     "release_yrmn": "2017-02",
     "count": 3,
     "history": [
-      { "date": "2026-05-02", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
-      { "date": "2026-06-26", "city": "Madrid, Spain", "city_zh": "西班牙/馬德里", "city_kr": "마드리드", "note": "" },
-      { "date": "2026-08-22", "city": "Toronto, Canada", "city_zh": "加拿大/多倫多", "city_kr": "토론토", "note": "" }
+      { "date": "2026-05-02", "city": "El Paso, TX, US", "city_zh": "美國|德州|艾爾帕索", "city_kr": "엘파소", "note": "" },
+      { "date": "2026-06-26", "city": "Madrid, Spain", "city_zh": "西班牙|馬德里", "city_kr": "마드리드", "note": "" },
+      { "date": "2026-08-22", "city": "Toronto, Canada", "city_zh": "加拿大|多倫多", "city_kr": "토론토", "note": "" }
     ]
   },
   "Dionysus": {
@@ -203,8 +203,8 @@
     "release_yrmn": "2019-04",
     "count": 2,
     "history": [
-      { "date": "2026-05-03", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
-      { "date": "2026-07-06", "city": "London, UK", "city_zh": "英國/倫敦", "city_kr": "런던", "note": "" }
+      { "date": "2026-05-03", "city": "El Paso, TX, US", "city_zh": "美國|德州|艾爾帕索", "city_kr": "엘파소", "note": "" },
+      { "date": "2026-07-06", "city": "London, UK", "city_zh": "英國|倫敦", "city_kr": "런던", "note": "" }
     ]
   },
   "Best Of Me": {
@@ -213,9 +213,9 @@
     "release_yrmn": "2017-09",
     "count": 3,
     "history": [
-      { "date": "2026-05-03", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
-      { "date": "2026-06-27", "city": "Madrid, Spain", "city_zh": "西班牙/馬德里", "city_kr": "마드리드", "note": "" },
-      { "date": "2026-08-11", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" }
+      { "date": "2026-05-03", "city": "El Paso, TX, US", "city_zh": "美國|德州|艾爾帕索", "city_kr": "엘파소", "note": "" },
+      { "date": "2026-06-27", "city": "Madrid, Spain", "city_zh": "西班牙|馬德里", "city_kr": "마드리드", "note": "" },
+      { "date": "2026-08-11", "city": "Baltimore, MD, US", "city_zh": "美國|馬里蘭州|巴爾的摩", "city_kr": "볼티모어", "note": "" }
     ]
   },
   "상남자 (Boy In Luv)": {
@@ -226,9 +226,9 @@
     "release_yrmn": "2014-02",
     "count": 3,
     "history": [
-      { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
-     { "date": "2026-08-10", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" },
-     { "date": "2026-09-01", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+      { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" },
+     { "date": "2026-08-10", "city": "Baltimore, MD, US", "city_zh": "美國|馬里蘭州|巴爾的摩", "city_kr": "볼티모어", "note": "" },
+     { "date": "2026-09-01", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "So What": {
@@ -237,8 +237,8 @@
     "release_yrmn": "2018-05",
     "count": 2,
     "history": [
-      { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
-      { "date": "2026-07-18", "city": "Paris, France", "city_zh": "法國/巴黎", "city_kr": "파리", "note": "" }
+      { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" },
+      { "date": "2026-07-18", "city": "Paris, France", "city_zh": "法國|巴黎", "city_kr": "파리", "note": "" }
     ]
   },
   "We Are Bulletproof PT.2": {
@@ -247,7 +247,7 @@
     "release_yrmn": "2013-06",
     "count": 1,
     "history": [
-      { "date": "2026-05-09", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" }
+      { "date": "2026-05-09", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" }
     ]
   },
   "하루만 (Just One Day)": {
@@ -257,8 +257,8 @@
     "release_yrmn": "2014-02",
     "count": 2,
     "history": [
-      { "date": "2026-05-09", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
-      { "date": "2026-08-11", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" }
+      { "date": "2026-05-09", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" },
+      { "date": "2026-08-11", "city": "Baltimore, MD, US", "city_zh": "美國|馬里蘭州|巴爾的摩", "city_kr": "볼티모어", "note": "" }
     ]
   },
   "Airplane pt.2": {
@@ -267,8 +267,8 @@
     "release_yrmn": "2018-05",
     "count": 2,
     "history": [
-      { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
-      { "date": "2026-06-26", "city": "Madrid, Spain", "city_zh": "西班牙/馬德里", "city_kr": "마드리드", "note": "" }
+      { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" },
+      { "date": "2026-06-26", "city": "Madrid, Spain", "city_zh": "西班牙|馬德里", "city_kr": "마드리드", "note": "" }
     ]
   },
   "N.O": {
@@ -277,8 +277,8 @@
     "release_yrmn": "2013-09",
     "count": 2,
     "history": [
-      { "date": "2026-05-16", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
-      { "date": "2026-08-06", "city": "Foxborough, US", "city_zh": "美國/福克斯堡", "city_kr": "폭스버러", "note": "" }
+      { "date": "2026-05-16", "city": "Stanford, CA, US", "city_zh": "美國|加州|史丹佛", "city_kr": "샌프란시스코", "note": "" },
+      { "date": "2026-08-06", "city": "Foxborough, MA, US", "city_zh": "美國|麻州|福克斯堡", "city_kr": "폭스버러", "note": "" }
     ]
   },
   "Anpanman": {
@@ -287,8 +287,8 @@
     "release_yrmn": "2018-05",
     "count": 2,
     "history": [
-      { "date": "2026-05-16", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
-      { "date": "2026-05-27", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
+      { "date": "2026-05-16", "city": "Stanford, CA, US", "city_zh": "美國|加州|史丹佛", "city_kr": "샌프란시스코", "note": "" },
+      { "date": "2026-05-27", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
     ]
   },
   "피 땀 눈물 (Blood Sweat & Tears)": {
@@ -299,8 +299,8 @@
     "release_yrmn": "2016-10",
     "count": 2,
     "history": [
-      { "date": "2026-05-17", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
-      { "date": "2026-07-12", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" }
+      { "date": "2026-05-17", "city": "Stanford, CA, US", "city_zh": "美國|加州|史丹佛", "city_kr": "샌프란시스코", "note": "" },
+      { "date": "2026-07-12", "city": "Munich, Germany", "city_zh": "德國|慕尼黑", "city_kr": "뮌헨", "note": "" }
     ]
   },
   "No More Dream": {
@@ -309,8 +309,8 @@
     "release_yrmn": "2013-06",
     "count": 2,
     "history": [
-      { "date": "2026-05-19", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
-      { "date": "2026-08-05", "city": "Foxborough, US", "city_zh": "美國/福克斯堡", "city_kr": "폭스버러", "note": "" }
+      { "date": "2026-05-19", "city": "Stanford, CA, US", "city_zh": "美國|加州|史丹佛", "city_kr": "샌프란시스코", "note": "" },
+      { "date": "2026-08-05", "city": "Foxborough, MA, US", "city_zh": "美國|麻州|福克斯堡", "city_kr": "폭스버러", "note": "" }
     ]
   },
   "고민보다 Go (Go Go)": {
@@ -321,9 +321,9 @@
     "release_yrmn": "2017-09",
     "count": 3,
     "history": [
-      { "date": "2026-05-23", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" },
-      { "date": "2026-08-02", "city": "New Jersey, US", "city_zh": "美國/紐澤西", "city_kr": "뉴저지", "note": "" },
-      { "date": "2026-08-15", "city": "Arlington, US", "city_zh": "美國/阿靈頓", "city_kr": "알링턴", "note": "" }
+      { "date": "2026-05-23", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" },
+      { "date": "2026-08-02", "city": "East Rutherford, NJ, US", "city_zh": "美國|紐澤西州|東拉瑟福德", "city_kr": "뉴저지", "note": "" },
+      { "date": "2026-08-15", "city": "Arlington, TX, US", "city_zh": "美國|德州|阿靈頓", "city_kr": "알링턴", "note": "" }
     ]
   },
   "Black Swan": {
@@ -333,7 +333,7 @@
     "release_yrmn": "2020-02",
     "count": 1,
     "history": [
-      { "date": "2026-05-24", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
+      { "date": "2026-05-24", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
     ]
   },
   "등골브레이커 (Spine Breaker)": {
@@ -344,7 +344,7 @@
     "release_yrmn": "2014-02",
     "count": 1,
     "history": [
-      { "date": "2026-05-24", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
+      { "date": "2026-05-24", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
     ]
   },
   "진격의 방탄 (Attack on Bangtan)": {
@@ -355,7 +355,7 @@
     "release_yrmn": "2013-09",
     "count": 1,
     "history": [
-      { "date": "2026-05-27", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
+      { "date": "2026-05-27", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
     ]
   },
   "흥탄소년단 (Boyz with Fun)": {
@@ -367,7 +367,7 @@
     "release_yrmn": "2015-04",
     "count": 1,
     "history": [
-      { "date": "2026-05-28", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
+      { "date": "2026-05-28", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
     ]
   },
   "Danger": {
@@ -376,7 +376,7 @@
     "release_yrmn": "2014-08",
     "count": 1,
     "history": [
-      { "date": "2026-05-28", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
+      { "date": "2026-05-28", "city": "Las Vegas, NV, US", "city_zh": "美國|內華達州|拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
     ]
   },
   "팔도강산 (Paldogangsan)": {
@@ -387,7 +387,7 @@
     "release_yrmn": "2013-09",
     "count": 1,
     "history": [
-      { "date": "2026-06-12", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "" }
+      { "date": "2026-06-12", "city": "Busan, South Korea", "city_zh": "南韓|釜山", "city_kr": "부산", "note": "" }
     ]
   },
   "Ma City": {
@@ -397,7 +397,7 @@
     "release_yrmn": "2015-11",
     "count": 1,
     "history": [
-      { "date": "2026-06-12", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "" }
+      { "date": "2026-06-12", "city": "Busan, South Korea", "city_zh": "南韓|釜山", "city_kr": "부산", "note": "" }
     ]
   },
   "보조개 (Dimple)": {
@@ -408,7 +408,7 @@
     "release_yrmn": "2017-09",
     "count": 1,
     "history": [
-      { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "Vocal Unit Song" }
+      { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓|釜山", "city_kr": "부산", "note": "Vocal Unit Song" }
     ]
   },
   "땡 (Ddaeng)": {
@@ -418,7 +418,7 @@
     "release_yrmn": "2018-06",
     "count": 1,
     "history": [
-      { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "5週年FESTA Rap Unit Song" }
+      { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓|釜山", "city_kr": "부산", "note": "5週年FESTA Rap Unit Song" }
     ]
   },
   "Tomorrow": {
@@ -427,8 +427,8 @@
     "release_yrmn": "2014-02",
     "count": 2,
     "history": [
-      { "date": "2026-07-01", "city": "Brussels, Belgium", "city_zh": "比利時/布魯塞爾", "city_kr": "브뤼셀", "note": "" },
-      { "date": "2026-08-27", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
+      { "date": "2026-07-01", "city": "Brussels, Belgium", "city_zh": "比利時|布魯塞爾", "city_kr": "브뤼셀", "note": "" },
+      { "date": "2026-08-27", "city": "Chicago, US", "city_zh": "美國|芝加哥", "city_kr": "시카고", "note": "" }
     ]
   },
   "For Youth": {
@@ -437,7 +437,7 @@
     "release_yrmn": "2022-06",
     "count": 1,
     "history": [
-      { "date": "2026-07-02", "city": "Brussels, Belgium", "city_zh": "比利時/布魯塞爾", "city_kr": "브뤼셀", "note": "" }
+      { "date": "2026-07-02", "city": "Brussels, Belgium", "city_zh": "比利時|布魯塞爾", "city_kr": "브뤼셀", "note": "" }
     ]
   },
   "EPILOGUE : Young Forever": {
@@ -447,7 +447,7 @@
     "release_yrmn": "2016-05",
     "count": 1,
     "history": [
-      { "date": "2026-07-07", "city": "London, UK", "city_zh": "英國/倫敦", "city_kr": "런던", "note": "" }
+      { "date": "2026-07-07", "city": "London, UK", "city_zh": "英國|倫敦", "city_kr": "런던", "note": "" }
     ]
   },
   "Louder than bombs": {
@@ -456,7 +456,7 @@
     "release_yrmn": "2020-02",
     "count": 1,
     "history": [
-      { "date": "2026-07-12", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" }
+      { "date": "2026-07-12", "city": "Munich, Germany", "city_zh": "德國|慕尼黑", "city_kr": "뮌헨", "note": "" }
     ]
   },
   "Jump": {
@@ -465,7 +465,7 @@
     "release_yrmn": "2014-02",
     "count": 1,
     "history": [
-      { "date": "2026-07-17", "city": "Paris, France", "city_zh": "法國/巴黎", "city_kr": "파리", "note": "" }
+      { "date": "2026-07-17", "city": "Paris, France", "city_zh": "法國|巴黎", "city_kr": "파리", "note": "" }
     ]
   },
   "We are Bulletproof : the Eternal": {
@@ -474,7 +474,7 @@
     "release_yrmn": "2020-02",
     "count": 1,
     "history": [
-      { "date": "2026-07-18", "city": "Paris, France", "city_zh": "法國/巴黎", "city_kr": "파리", "note": "" }
+      { "date": "2026-07-18", "city": "Paris, France", "city_zh": "法國|巴黎", "city_kr": "파리", "note": "" }
     ]
   },
   "병 (Dis-ease)": {
@@ -485,7 +485,7 @@
     "release_yrmn": "2020-11",
     "count": 1,
     "history": [
-      { "date": "2026-08-01", "city": "New Jersey, US", "city_zh": "美國/紐澤西", "city_kr": "뉴저지", "note": "" }
+      { "date": "2026-08-01", "city": "East Rutherford, NJ, US", "city_zh": "美國|紐澤西州|東拉瑟福德", "city_kr": "뉴저지", "note": "" }
     ]
   },
   "고엽 (Autumn Leaves)": {
@@ -497,7 +497,7 @@
     "release_yrmn": "2015-11",
     "count": 1,
     "history": [
-      { "date": "2026-08-02", "city": "New Jersey, US", "city_zh": "美國/紐澤西", "city_kr": "뉴저지", "note": "" }
+      { "date": "2026-08-02", "city": "East Rutherford, NJ, US", "city_zh": "美國|紐澤西州|東拉瑟福德", "city_kr": "뉴저지", "note": "" }
     ]
   },
   "낙원 (Paradise)": {
@@ -508,7 +508,7 @@
     "release_yrmn": "2018-05",
     "count": 1,
     "history": [
-      { "date": "2026-08-05", "city": "Foxborough, US", "city_zh": "美國/福克斯堡", "city_kr": "폭스버러", "note": "" }
+      { "date": "2026-08-05", "city": "Foxborough, MA, US", "city_zh": "美國|麻州|福克斯堡", "city_kr": "폭스버러", "note": "" }
     ]
   },
   "Make It Right": {
@@ -517,7 +517,7 @@
     "release_yrmn": "2019-04",
     "count": 1,
     "history": [
-      { "date": "2026-08-06", "city": "Foxborough, US", "city_zh": "美國/福克斯堡", "city_kr": "폭스버러", "note": "" }
+      { "date": "2026-08-06", "city": "Foxborough, MA, US", "city_zh": "美國|麻州|福克斯堡", "city_kr": "폭스버러", "note": "" }
     ]
   },
   "잠시 (Telepathy)": {
@@ -528,7 +528,7 @@
     "release_yrmn": "2020-11",
     "count": 1,
     "history": [
-      { "date": "2026-08-10", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" }
+      { "date": "2026-08-10", "city": "Baltimore, MD, US", "city_zh": "美國|馬里蘭州|巴爾的摩", "city_kr": "볼티모어", "note": "" }
     ]
   },
   "Butterfly": {
@@ -538,7 +538,7 @@
     "release_yrmn": "2015-11",
     "count": 1,
     "history": [
-      { "date": "2026-08-16", "city": "Arlington, US", "city_zh": "美國/阿靈頓", "city_kr": "알링턴", "note": "" }
+      { "date": "2026-08-16", "city": "Arlington, TX, US", "city_zh": "美國|德州|阿靈頓", "city_kr": "알링턴", "note": "" }
     ]
   },
   "00:00 (Zero O'Clock)": {
@@ -548,7 +548,7 @@
     "release_yrmn": "2020-02",
     "count": 1,
     "history": [
-      { "date": "2026-08-23", "city": "Toronto, Canada", "city_zh": "加拿大/多倫多", "city_kr": "토론토", "note": "" }
+      { "date": "2026-08-23", "city": "Toronto, Canada", "city_zh": "加拿大|多倫多", "city_kr": "토론토", "note": "" }
     ]
   },
   "Outro : Tear": {
@@ -557,7 +557,7 @@
     "release_yrmn": "2018-05",
     "count": 1,
     "history": [
-      { "date": "2026-08-23", "city": "Toronto, Canada", "city_zh": "加拿大/多倫多", "city_kr": "토론토", "note": "" }
+      { "date": "2026-08-23", "city": "Toronto, Canada", "city_zh": "加拿大|多倫多", "city_kr": "토론토", "note": "" }
     ]
   },
   "힙합성애자 (Hip Hop Phile)": {
@@ -567,7 +567,7 @@
     "release_yrmn": "2014-08",
     "count": 1,
     "history": [
-      { "date": "2026-08-27", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
+      { "date": "2026-08-27", "city": "Chicago, US", "city_zh": "美國|芝加哥", "city_kr": "시카고", "note": "" }
     ]
   },
   "134340": {
@@ -576,7 +576,7 @@
     "release_yrmn": "2018-05",
     "count": 1,
     "history": [
-     { "date": "2026-08-28", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
+     { "date": "2026-08-28", "city": "Chicago, US", "city_zh": "美國|芝加哥", "city_kr": "시카고", "note": "" }
     ]
   },
   "Love Maze": {
@@ -585,7 +585,7 @@
     "release_yrmn": "2018-05",
     "count": 1,
     "history": [
-     { "date": "2026-09-02", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+     { "date": "2026-09-02", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
     "HOME": {
@@ -594,7 +594,7 @@
     "release_yrmn": "2019-04",
     "count": 1,
     "history": [
-       { "date": "2026-09-05", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+       { "date": "2026-09-05", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   }
  

@@ -107,8 +107,9 @@ async def check_song(interaction: discord.Interaction, song_name: str):
         title=f"🌸 ARIRANG SPIN Tracker: {song_title}",
         color=discord.Color.purple()
     )
-    embed.add_field(name="收錄專輯", value=album_display, inline=True)
-    embed.add_field(name="演唱次數", value=f"**{info.get('count', 0)} 次**", inline=True)
+    # 將 inline 皆設為 False，演唱次數就會固定排在專輯的下一行
+    embed.add_field(name="收錄專輯", value=album_display, inline=False)
+    embed.add_field(name="演唱次數", value=f"**{info.get('count', 0)} 次**", inline=False)
     
     # 歷史場次按日期舊到新排序
     history_list = sorted(info.get('history', []), key=lambda x: x.get('date', ''))
