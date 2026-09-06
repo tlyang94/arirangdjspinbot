@@ -199,17 +199,17 @@ async def check_album(interaction: discord.Interaction, album_name: str):
     await interaction.followup.send(embed=embed, ephemeral=True)
 
 
-# ==================== 指令 3：/city (搜尋城市) ====================
-@bot.tree.command(name="city", description="查詢特定城市演唱歌曲 (按日期群組顯示)")
-@app_commands.describe(city_name="輸入城市名稱")
+# ==================== 指令 3：/city (搜尋國家/城市，依城市與日期分組顯示) ====================
+@bot.tree.command(name="city", description="查詢特定國家或城市演唱歌曲 (按城市與日期群組顯示)")
+@app_commands.describe(city_name="輸入國家或城市名稱 (例如: 美國, 洛杉磯, Goyang)")
 async def check_city(interaction: discord.Interaction, city_name: str):
     await interaction.response.defer(ephemeral=True)
     query = city_name.lower().strip()
     
-    # 用字典依日期整理歌曲： { "2024-05-10": [(song, album, note), ...], ... }
-    date_grouped_records = {}
-    matched_city_display = ""
+    # 資料結構: { "城市顯示名稱": { "2026-05-10": [(song, album, note), ...], ... } }
+    city_grouped_records = {}
     total_song_count = 0
+    matched_search_label = ""
 
     for song_title, info in song_data.items():
         song_display = get_display_text(info.get('title_zh'), info.get('title_kr'), info.get('title_en'), info.get('title'), song_title)
@@ -225,50 +225,69 @@ async def check_city(interaction: discord.Interaction, city_name: str):
             city_en = h.get("city_en", "")
             city_kr = h.get("city_kr", "")
             
+            # 檢查關鍵字是否符合國家或城市
             if (city_def and query in city_def.lower()) or \
                (city_zh and query in city_zh.lower()) or \
                (city_en and query in city_en.lower()) or \
                (city_kr and query in city_kr.lower()):
                 
-                if not matched_city_display:
-                    matched_city_display = get_display_text(city_zh, city_kr, city_en, city_def, city_name)
-                    
+                # 擷取精簡城市名稱：若 city_zh 有豎線 "美國|加州|洛杉磯"，取最後一項 "洛杉磯"
+                if "|" in city_zh:
+                    clean_city_zh = city_zh.split("|")[-1]
+                else:
+                    clean_city_zh = city_zh
+                
+                # 組合顯示城市格式：例如 "洛杉磯 (Los Angeles, CA, US)"
+                city_key = f"{clean_city_zh} ({city_def})" if clean_city_zh and city_def else (clean_city_zh or city_def or "未知城市")
+                
+                # 設定 Embed 標題搜尋關鍵字
+                if not matched_search_label:
+                    matched_search_label = city_name
+
                 event_date = h.get('date', '未知日期')
                 note = h.get('note', '')
                 
-                if event_date not in date_grouped_records:
-                    date_grouped_records[event_date] = []
+                if city_key not in city_grouped_records:
+                    city_grouped_records[city_key] = {}
                 
-                date_grouped_records[event_date].append((song_display, album_with_release, note))
+                if event_date not in city_grouped_records[city_key]:
+                    city_grouped_records[city_key][event_date] = []
+                
+                city_grouped_records[city_key][event_date].append((song_display, album_with_release, note))
                 total_song_count += 1
 
-    if not date_grouped_records:
-        await interaction.followup.send(f"❌ 找不到在城市 `{city_name}` 的演唱紀錄。", ephemeral=True)
+    if not city_grouped_records:
+        await interaction.followup.send(f"❌ 找不到與 `{city_name}` 相關的演唱紀錄。", ephemeral=True)
         return
 
-    # 依日期由舊到新排序
-    sorted_dates = sorted(date_grouped_records.keys())
-    total_shows = len(sorted_dates)
+    # 計算總場次（依不重複的「城市+日期」計算）
+    total_shows = sum(len(dates) for dates in city_grouped_records.values())
 
     embed = discord.Embed(
-        title=f"🏙️ 城市－{matched_city_display} 共 {total_shows} 場 / {total_song_count} 首",
+        title=f"🏙️ 搜尋國家/區域/城市：{matched_search_label} 共 {total_shows} 場 / {total_song_count} 首",
         color=discord.Color.green()
     )
 
     city_list_text = ""
-    for date in sorted_dates:
-        city_list_text += f"📅 `{date}`\n"
-        songs = date_grouped_records[date]
-        for song_display, album_with_release, note in songs:
-            note_display = f" — *{note}*" if note else ""
-            city_list_text += f"  └ **{song_display}** `[{album_with_release}]`{note_display}\n"
+    for city_display_name, dates in city_grouped_records.items():
+        city_list_text += f"📍 **{city_display_name}**\n"
+        
+        # 日期由舊到新排序
+        for date in sorted(dates.keys()):
+            city_list_text += f"  📅 `{date}`\n"
+            songs = dates[date]
+            for song_display, album_with_release, note in songs:
+                note_display = f" — *{note}*" if note else ""
+                city_list_text += f"     └ **{song_display}** `[{album_with_release}]`{note_display}\n"
         city_list_text += "\n"
 
+    # 防止訊息超越 Discord Embed 4000 字限制
     if len(city_list_text) > 4000:
         city_list_text = city_list_text[:3950] + "\n\n*(內容過長，已截斷部分紀錄...)*"
 
     embed.description = city_list_text
     await interaction.followup.send(embed=embed, ephemeral=True)
+
 
 # ==================== 指令 4：/count (依演唱次數查詢歌曲清單) ====================
 @bot.tree.command(name="count", description="查詢指定演唱次數的所有歌曲與場次細節")
