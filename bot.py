@@ -199,19 +199,22 @@ async def check_album(interaction: discord.Interaction, album_name: str):
 
 
 # ==================== 指令 3：/city (搜尋城市) ====================
-@bot.tree.command(name="city", description="查詢特定城市演唱歌曲")
+@bot.tree.command(name="city", description="查詢特定城市演唱歌曲 (按日期排序)")
 @app_commands.describe(city_name="輸入城市名稱")
 async def check_city(interaction: discord.Interaction, city_name: str):
     await interaction.response.defer(ephemeral=True)
     query = city_name.lower().strip()
-    matched_results = []
+    matched_records = []
     matched_city_display = ""
 
     for song_title, info in song_data.items():
-        song_display = get_display_text(info.get('title'), info.get('title_zh'), info.get('title_kr'), info.get('title_en'), song_title)
-        album_display = get_display_text(info.get('album'), info.get('album_zh'), info.get('album_kr'), info.get('album_en'), "未知專輯")
+        song_display = get_display_text(info.get('title_zh'), info.get('title_kr'), info.get('title_en'), info.get('title'), song_title)
+        album_display = get_display_text(info.get('album_zh'), info.get('album_kr'), info.get('album_en'), info.get('album'), "未知專輯")
         
-        city_records = []
+        # 取得發行年月
+        release_yrmn = info.get("release_yrmn", "")
+        album_with_release = f"{album_display} ({release_yrmn})" if release_yrmn else album_display
+        
         for h in info.get("history", []):
             city_def = h.get("city", "")
             city_zh = h.get("city_zh", "")
@@ -224,35 +227,29 @@ async def check_city(interaction: discord.Interaction, city_name: str):
                (city_kr and query in city_kr.lower()):
                 
                 if not matched_city_display:
-                    matched_city_display = get_display_text(city_def, city_zh, city_kr, city_en, city_name)
+                    matched_city_display = get_display_text(city_zh, city_kr, city_en, city_def, city_name)
                     
-                city_records.append(h)
-                
-        if city_records:
-            sorted_records = sorted(city_records, key=lambda x: x.get('date', ''))
-            # 依據 release_yrmn 作為歌曲排序依據
-            sort_key = get_sort_key(info)
-            matched_results.append((song_display, album_display, sorted_records, sort_key))
+                # 記錄單場資訊：(日期, 歌曲名稱, 專輯含發行日, 備註)
+                event_date = h.get('date', '9999-99-99')
+                note = h.get('note', '')
+                matched_records.append((event_date, song_display, album_with_release, note))
 
-    if not matched_results:
+    if not matched_records:
         await interaction.followup.send(f"❌ 找不到在城市 `{city_name}` 的演唱紀錄。", ephemeral=True)
         return
 
-    # 城市清單依發行年份排序
-    matched_results = sorted(matched_results, key=lambda x: x[3])
+    # 按場次日期 (event_date) 由舊到新排序
+    matched_records = sorted(matched_records, key=lambda x: x[0])
 
     embed = discord.Embed(
-        title=f"🏙️ 城市－{matched_city_display} 演唱曲目",
+        title=f"🏙️ 城市－{matched_city_display}共 {len(matched_records)} 場",
         color=discord.Color.green()
     )
 
     city_list_text = ""
-    for song_display, album_display, records, _ in matched_results:
-        city_list_text += f"• **{song_display}** `[{album_display}]`\n"
-        for r in records:
-            note_display = f" — *{r.get('note')}*" if r.get('note') else ""
-            city_list_text += f"  └ `{r.get('date')}`{note_display}\n"
-        city_list_text += "\n"
+    for date, song_display, album_with_release, note in matched_records:
+        note_display = f" — *{note}*" if note else ""
+        city_list_text += f"• `{date}` | **{song_display}** `[{album_with_release}]`{note_display}\n"
 
     if len(city_list_text) > 4000:
         city_list_text = city_list_text[:3950] + "\n\n*(內容過長，已截斷部分紀錄...)*"
