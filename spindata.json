@@ -3,7 +3,8 @@
     "title": "소우주 (Mikrokosmos)",
     "title_en": "Mikrokosmos",
     "title_zh": "小宇宙",
-    "album": "MAP OF THE SOUL : PERSONA (2019)",
+    "album": "MAP OF THE SOUL : PERSONA",
+    "release_yrmn": "2019-04",
     "count": 3,
     "history": [
       { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
@@ -13,8 +14,9 @@
   },
   "I NEED U": {
     "title": "I NEED U",
-    "album": "화양연화 pt.1 (2015)",
-    "album_zh": "花樣年華 pt.1 (2015)",
+    "album": "화양연화 pt.1",
+    "album_zh": "花樣年華 pt.1",
+    "release_yrmn": "2015-04",
     "count": 2,
     "history": [
       { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
@@ -22,8 +24,9 @@
     ]
   },
   "Take Two": {
-    "title": "Take Two (2023)",
-    "album": "Take Two (2023)",
+    "title": "Take Two",
+    "album": "Take Two",
+    "release_yrmn": "2023-06",
     "count": 1,
     "history": [
       { "date": "2026-04-11", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "10週年紀念數位單曲" }
@@ -31,7 +34,8 @@
   },
   "DNA": {
     "title": "DNA",
-    "album": "LOVE YOURSELF 承 'Her' (2017)",
+    "album": "LOVE YOURSELF 承 'Her'",
+    "release_yrmn": "2017-09",
     "count": 2,
     "history": [
       { "date": "2026-04-11", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
@@ -42,7 +46,8 @@
     "title": "봄날 (Spring Day)",
     "title_en": "Spring Day",
     "title_zh": "春日",
-    "album": "YOU NEVER WALK ALONE (2017)",
+    "album": "YOU NEVER WALK ALONE",
+    "release_yrmn": "2017-02",
     "count": 2,
     "history": [
       { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
@@ -51,8 +56,9 @@
   },
   "RUN": {
     "title": "RUN",
-    "album": "화양연화 pt.2 (2015)",
-    "album_zh": "花樣年華 pt.2 (2015)",
+    "album": "화양연화 pt.2",
+    "album_zh": "花樣年華 pt.2",
+    "release_yrmn": "2015-11",
     "count": 2,
     "history": [
       { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓/高陽", "city_kr": "고양", "note": "" },
@@ -61,8 +67,9 @@
   },
   "Save ME": {
     "title": "Save ME",
-    "album": "화양연화 Young Forever (2016)",
-    "album_zh": "花樣年華 Young Forever (2016)",
+    "album": "화양연화 Young Forever",
+    "album_zh": "花樣年華 Young Forever",
+    "release_yrmn": "2016-05",
     "count": 2,
     "history": [
       { "date": "2026-04-17", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "" },
@@ -71,7 +78,8 @@
   },
   "Crystal Snow": {
     "title": "Crystal Snow",
-    "album": "MIC Drop/DNA/Crystal Snow (2017)",
+    "album": "MIC Drop/DNA/Crystal Snow",
+    "release_yrmn": "2017-12",
     "count": 1,
     "history": [
       { "date": "2026-04-17", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "日本單曲輯" }
@@ -80,8 +88,9 @@
   "쩔어 (Dope)": {
     "title": "쩔어 (Dope)",
     "title_en": "Dope",
-    "album": "화양연화 pt.1 (2015)",
-    "album_zh": "花樣年華 pt.1 (2015)",
+    "album": "화양연화 pt.1",
+    "album_zh": "花樣年華 pt.1",
+    "release_yrmn": "2015-04",
     "count": 3,
     "history": [
       { "date": "2026-04-18", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "" },
@@ -91,7 +100,8 @@
   },
   "FOR YOU": {
     "title": "FOR YOU",
-    "album": "FOR YOU (2015)",
+    "album": "FOR YOU",
+    "release_yrmn": "2015-06",
     "count": 1,
     "history": [
       { "date": "2026-04-18", "city": "Tokyo, Japan", "city_zh": "日本/東京", "city_kr": "도쿄", "note": "日本單曲輯" }
@@ -99,7 +109,8 @@
   },
   "Permission to Dance": {
     "title": "Permission to Dance",
-    "album": "Butter/Permission to Dance (2021)",
+    "album": "Butter/Permission to Dance",
+    "release_yrmn": "2021-07",
     "count": 3,
     "history": [
       { "date": "2026-04-25", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
@@ -109,7 +120,8 @@
   },
   "Magic Shop": {
     "title": "Magic Shop",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 3,
     "history": [
       { "date": "2026-04-25", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
@@ -120,7 +132,8 @@
   "작은 것들을 위한 시 (Boy With Luv)": {
     "title": "작은 것들을 위한 시 (Boy With Luv)",
     "title_en": "Boy With Luv",
-    "album": "MAP OF THE SOUL : PERSONA (2019)",
+    "album": "MAP OF THE SOUL : PERSONA",
+    "release_yrmn": "2019-04",
     "count": 3,
     "history": [
       { "date": "2026-04-26", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
@@ -130,16 +143,19 @@
   },
   "Pied Piper": {
     "title": "Pied Piper",
-    "album": "LOVE YOURSELF 承 'Her' (2017)",
-    "count": 2,
+    "album": "LOVE YOURSELF 承 'Her'",
+    "release_yrmn": "2017-09",
+    "count": 3,
     "history": [
       { "date": "2026-04-26", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
-      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" }
+      { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" },
+      { "date": "2026-09-05", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "Life Goes On": {
     "title": "Life Goes On",
-    "album": "BE (2020)",
+    "album": "BE",
+    "release_yrmn": "2020-11",
     "count": 2,
     "history": [
       { "date": "2026-04-28", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
@@ -150,9 +166,10 @@
     "title": "뱁새 (Silver Spoon)",
     "title_en": "Silver Spoon",
     "title_zh": "鴉雀",
-    "album": "화양연화 pt.2 (2015)",
-    "album_zh": "花樣年華 pt.2 (2015)",
-    "count": 2,
+    "album": "화양연화 pt.2",
+    "album_zh": "花樣年華 pt.2",
+    "release_yrmn": "2015-11",
+    "count": 3,
     "history": [
       { "date": "2026-04-28", "city": "Tampa, US", "city_zh": "美國/坦帕", "city_kr": "템파", "note": "" },
       { "date": "2026-07-11", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" },
@@ -161,7 +178,8 @@
   },
   "ON": {
     "title": "ON",
-    "album": "MAP OF THE SOUL : 7 (2020)",
+    "album": "MAP OF THE SOUL : 7",
+    "release_yrmn": "2020-02",
     "count": 2,
     "history": [
       { "date": "2026-05-02", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
@@ -170,7 +188,8 @@
   },
   "Outro : Wings": {
     "title": "Outro : Wings",
-    "album": "YOU NEVER WALK ALONE (2017)",
+    "album": "YOU NEVER WALK ALONE",
+    "release_yrmn": "2017-02",
     "count": 3,
     "history": [
       { "date": "2026-05-02", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
@@ -180,7 +199,8 @@
   },
   "Dionysus": {
     "title": "Dionysus",
-    "album": "MAP OF THE SOUL : PERSONA (2019)",
+    "album": "MAP OF THE SOUL : PERSONA",
+    "release_yrmn": "2019-04",
     "count": 2,
     "history": [
       { "date": "2026-05-03", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
@@ -189,7 +209,8 @@
   },
   "Best Of Me": {
     "title": "Best Of Me",
-    "album": "LOVE YOURSELF 承 'Her' (2017)",
+    "album": "LOVE YOURSELF 承 'Her'",
+    "release_yrmn": "2017-09",
     "count": 3,
     "history": [
       { "date": "2026-05-03", "city": "El Paso, US", "city_zh": "美國/艾爾帕索", "city_kr": "엘파소", "note": "" },
@@ -201,7 +222,8 @@
     "title": "상남자 (Boy In Luv)",
     "title_en": "Boy In Luv",
     "title_zh": "男子漢",
-    "album": "SKOOL LUV AFFAIR (2014)",
+    "album": "SKOOL LUV AFFAIR",
+    "release_yrmn": "2014-02",
     "count": 3,
     "history": [
       { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
@@ -211,7 +233,8 @@
   },
   "So What": {
     "title": "So What",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 2,
     "history": [
       { "date": "2026-05-07", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
@@ -220,7 +243,8 @@
   },
   "We Are Bulletproof PT.2": {
     "title": "We Are Bulletproof PT.2",
-    "album": "2 COOL 4 SKOOL (2013)",
+    "album": "2 COOL 4 SKOOL",
+    "release_yrmn": "2013-06",
     "count": 1,
     "history": [
       { "date": "2026-05-09", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" }
@@ -229,7 +253,8 @@
   "하루만 (Just One Day)": {
     "title": "하루만 (Just One Day)",
     "title_en": "Just One Day",
-    "album": "SKOOL LUV AFFAIR (2014)",
+    "album": "SKOOL LUV AFFAIR",
+    "release_yrmn": "2014-02",
     "count": 2,
     "history": [
       { "date": "2026-05-09", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
@@ -238,7 +263,8 @@
   },
   "Airplane pt.2": {
     "title": "Airplane pt.2",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 2,
     "history": [
       { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥/墨西哥城", "city_kr": "멕시코시티", "note": "" },
@@ -247,7 +273,8 @@
   },
   "N.O": {
     "title": "N.O",
-    "album": "O!RUL8,2? (2013)",
+    "album": "O!RUL8,2?",
+    "release_yrmn": "2013-09",
     "count": 2,
     "history": [
       { "date": "2026-05-16", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
@@ -256,7 +283,8 @@
   },
   "Anpanman": {
     "title": "Anpanman",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 2,
     "history": [
       { "date": "2026-05-16", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
@@ -267,7 +295,8 @@
     "title": "피 땀 눈물 (Blood Sweat & Tears)",
     "title_en": "Blood Sweat & Tears",
     "title_zh": "血汗淚",
-    "album": "WINGS (2016)",
+    "album": "WINGS",
+    "release_yrmn": "2016-10",
     "count": 2,
     "history": [
       { "date": "2026-05-17", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
@@ -276,7 +305,8 @@
   },
   "No More Dream": {
     "title": "No More Dream",
-    "album": "2 COOL 4 SKOOL (2013)",
+    "album": "2 COOL 4 SKOOL",
+    "release_yrmn": "2013-06",
     "count": 2,
     "history": [
       { "date": "2026-05-19", "city": "San Francisco, US", "city_zh": "美國/舊金山", "city_kr": "샌프란시스코", "note": "" },
@@ -287,7 +317,8 @@
     "title": "고민보다 Go (Go Go)",
     "title_en": "Go Go",
     "title_zh": "與其煩惱不如Go",
-    "album": "LOVE YOURSELF 承 'Her' (2017)",
+    "album": "LOVE YOURSELF 承 'Her'",
+    "release_yrmn": "2017-09",
     "count": 3,
     "history": [
       { "date": "2026-05-23", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" },
@@ -298,7 +329,8 @@
   "Black Swan": {
     "title": "Black Swan",
     "title_zh": "黑天鵝",
-    "album": "MAP OF THE SOUL : 7 (2020)",
+    "album": "MAP OF THE SOUL : 7",
+    "release_yrmn": "2020-02",
     "count": 1,
     "history": [
       { "date": "2026-05-24", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
@@ -308,7 +340,8 @@
     "title": "등골브레이커 (Spine Breaker)",
     "title_en": "Spine Breaker",
     "title_zh": "啃老族",
-    "album": "SKOOL LUV AFFAIR (2014)",
+    "album": "SKOOL LUV AFFAIR",
+    "release_yrmn": "2014-02",
     "count": 1,
     "history": [
       { "date": "2026-05-24", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
@@ -318,7 +351,8 @@
     "title": "진격의 방탄 (Attack on Bangtan)",
     "title_en": "Attack on Bangtan",
     "title_zh": "進擊的防彈",
-    "album": "O!RUL8,2? (2013)",
+    "album": "O!RUL8,2?",
+    "release_yrmn": "2013-09",
     "count": 1,
     "history": [
       { "date": "2026-05-27", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
@@ -328,8 +362,9 @@
     "title": "흥탄소년단 (Boyz with Fun)",
     "title_en": "Boyz with Fun",
     "title_zh": "興彈少年團",
-    "album": "화양연화 pt.1 (2015)",
-    "album_zh": "花樣年華 pt.1 (2015)",
+    "album": "화양연화 pt.1",
+    "album_zh": "花樣年華 pt.1",
+    "release_yrmn": "2015-04",
     "count": 1,
     "history": [
       { "date": "2026-05-28", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
@@ -337,7 +372,8 @@
   },
   "Danger": {
     "title": "Danger",
-    "album": "DARK&WILD (2014)",
+    "album": "DARK&WILD",
+    "release_yrmn": "2014-08",
     "count": 1,
     "history": [
       { "date": "2026-05-28", "city": "Las Vegas, US", "city_zh": "美國/拉斯維加斯", "city_kr": "라스베이거스", "note": "" }
@@ -347,7 +383,8 @@
     "title": "팔도강산 (Paldogangsan)",
     "title_en": "Paldogangsan",
     "title_zh": "八道江山",
-    "album": "O!RUL8,2? (2013)",
+    "album": "O!RUL8,2?",
+    "release_yrmn": "2013-09",
     "count": 1,
     "history": [
       { "date": "2026-06-12", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "" }
@@ -355,8 +392,9 @@
   },
   "Ma City": {
     "title": "Ma City",
-    "album": "화양연화 pt.2 (2015)",
-    "album_zh": "花樣年華 pt.2 (2015)",
+    "album": "화양연화 pt.2",
+    "album_zh": "花樣年華 pt.2",
+    "release_yrmn": "2015-11",
     "count": 1,
     "history": [
       { "date": "2026-06-12", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "" }
@@ -366,7 +404,8 @@
     "title": "보조개 (Dimple)",
     "title_en": "Dimple",
     "title_zh": "酒窩",
-    "album": "LOVE YOURSELF 承 'Her' (2017)",
+    "album": "LOVE YOURSELF 承 'Her'",
+    "release_yrmn": "2017-09",
     "count": 1,
     "history": [
       { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "Vocal Unit Song" }
@@ -376,6 +415,7 @@
     "title": "땡 (Ddaeng)",
     "title_en": "Ddaeng",
     "album": "DD CEREMONY",
+    "release_yrmn": "2018-06",
     "count": 1,
     "history": [
       { "date": "2026-06-13", "city": "Busan, South Korea", "city_zh": "南韓/釜山", "city_kr": "부산", "note": "5週年FESTA Rap Unit Song" }
@@ -383,7 +423,8 @@
   },
   "Tomorrow": {
     "title": "Tomorrow",
-    "album": "SKOOL LUV AFFAIR (2014)",
+    "album": "SKOOL LUV AFFAIR",
+    "release_yrmn": "2014-02",
     "count": 2,
     "history": [
       { "date": "2026-07-01", "city": "Brussels, Belgium", "city_zh": "比利時/布魯塞爾", "city_kr": "브뤼셀", "note": "" },
@@ -392,7 +433,8 @@
   },
   "For Youth": {
     "title": "For Youth",
-    "album": "Proof (2022)",
+    "album": "Proof",
+    "release_yrmn": "2022-06",
     "count": 1,
     "history": [
       { "date": "2026-07-02", "city": "Brussels, Belgium", "city_zh": "比利時/布魯塞爾", "city_kr": "브뤼셀", "note": "" }
@@ -400,8 +442,9 @@
   },
   "EPILOGUE : Young Forever": {
     "title": "EPILOGUE : Young Forever",
-    "album": "화양연화 Young Forever (2016)",
-    "album_zh": "花樣年華 Young Forever (2016)",
+    "album": "화양연화 Young Forever",
+    "album_zh": "花樣年華 Young Forever",
+    "release_yrmn": "2016-05",
     "count": 1,
     "history": [
       { "date": "2026-07-07", "city": "London, UK", "city_zh": "英國/倫敦", "city_kr": "런던", "note": "" }
@@ -409,7 +452,8 @@
   },
   "Louder than bombs": {
     "title": "Louder than bombs",
-    "album": "MAP OF THE SOUL : 7 (2020)",
+    "album": "MAP OF THE SOUL : 7",
+    "release_yrmn": "2020-02",
     "count": 1,
     "history": [
       { "date": "2026-07-12", "city": "Munich, Germany", "city_zh": "德國/慕尼黑", "city_kr": "뮌헨", "note": "" }
@@ -417,7 +461,8 @@
   },
   "Jump": {
     "title": "Jump",
-    "album": "SKOOL LUV AFFAIR (2014)",
+    "album": "SKOOL LUV AFFAIR",
+    "release_yrmn": "2014-02",
     "count": 1,
     "history": [
       { "date": "2026-07-17", "city": "Paris, France", "city_zh": "法國/巴黎", "city_kr": "파리", "note": "" }
@@ -425,7 +470,8 @@
   },
   "We are Bulletproof : the Eternal": {
     "title": "We are Bulletproof : the Eternal",
-    "album": "MAP OF THE SOUL : 7 (2020)",
+    "album": "MAP OF THE SOUL : 7",
+    "release_yrmn": "2020-02",
     "count": 1,
     "history": [
       { "date": "2026-07-18", "city": "Paris, France", "city_zh": "法國/巴黎", "city_kr": "파리", "note": "" }
@@ -435,7 +481,8 @@
     "title": "병 (Dis-ease)",
     "title_en": "Dis-ease",
     "title_zh": "病",
-    "album": "BE (2020)",
+    "album": "BE",
+    "release_yrmn": "2020-11",
     "count": 1,
     "history": [
       { "date": "2026-08-01", "city": "New Jersey, US", "city_zh": "美國/紐澤西", "city_kr": "뉴저지", "note": "" }
@@ -445,8 +492,9 @@
     "title": "고엽 (Autumn Leaves)",
     "title_en": "Autumn Leaves",
     "title_zh": "枯葉",
-    "album": "화양연화 pt.2 (2015)",
-    "album_zh": "花樣年華 pt.2 (2015)",
+    "album": "화양연화 pt.2",
+    "album_zh": "花樣年華 pt.2",
+    "release_yrmn": "2015-11",
     "count": 1,
     "history": [
       { "date": "2026-08-02", "city": "New Jersey, US", "city_zh": "美國/紐澤西", "city_kr": "뉴저지", "note": "" }
@@ -456,7 +504,8 @@
     "title": "낙원 (Paradise)",
     "title_en": "Paradise",
     "title_zh": "樂園",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 1,
     "history": [
       { "date": "2026-08-05", "city": "Foxborough, US", "city_zh": "美國/福克斯堡", "city_kr": "폭스버러", "note": "" }
@@ -464,7 +513,8 @@
   },
   "Make It Right": {
     "title": "Make It Right",
-    "album": "MAP OF THE SOUL : PERSONA (2019)",
+    "album": "MAP OF THE SOUL : PERSONA",
+    "release_yrmn": "2019-04",
     "count": 1,
     "history": [
       { "date": "2026-08-06", "city": "Foxborough, US", "city_zh": "美國/福克斯堡", "city_kr": "폭스버러", "note": "" }
@@ -475,6 +525,7 @@
     "title_en": "Telepathy",
     "title_zh": "暫時",
     "album": "BE",
+    "release_yrmn": "2020-11",
     "count": 1,
     "history": [
       { "date": "2026-08-10", "city": "Baltimore, US", "city_zh": "美國/巴爾的摩", "city_kr": "볼티모어", "note": "" }
@@ -482,8 +533,9 @@
   },
   "Butterfly": {
     "title": "Butterfly",
-    "album": "화양연화 pt.2 (2015)",
-    "album_zh": "花樣年華 pt.2 (2015)",
+    "album": "화양연화 pt.2",
+    "album_zh": "花樣年華 pt.2",
+    "release_yrmn": "2015-11",
     "count": 1,
     "history": [
       { "date": "2026-08-16", "city": "Arlington, US", "city_zh": "美國/阿靈頓", "city_kr": "알링턴", "note": "" }
@@ -492,7 +544,8 @@
   "00:00 (Zero O'Clock)": {
     "title": "00:00 (Zero O'Clock)",
     "title_en": "Zero O'Clock",
-    "album": "MAP OF THE SOUL : 7 (2020)",
+    "album": "MAP OF THE SOUL : 7",
+    "release_yrmn": "2020-02",
     "count": 1,
     "history": [
       { "date": "2026-08-23", "city": "Toronto, Canada", "city_zh": "加拿大/多倫多", "city_kr": "토론토", "note": "" }
@@ -500,7 +553,8 @@
   },
   "Outro : Tear": {
     "title": "Outro : Tear",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 1,
     "history": [
       { "date": "2026-08-23", "city": "Toronto, Canada", "city_zh": "加拿大/多倫多", "city_kr": "토론토", "note": "" }
@@ -509,7 +563,8 @@
   "힙합성애자 (Hip Hop Phile)": {
     "title": "힙합성애자 (Hip Hop Phile)",
     "title_en": "Hip Hop Phile",
-    "album": "DARK&WILD (2014)",
+    "album": "DARK&WILD",
+    "release_yrmn": "2014-08",
     "count": 1,
     "history": [
       { "date": "2026-08-27", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
@@ -517,7 +572,8 @@
   },
   "134340": {
     "title": "134340",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 1,
     "history": [
      { "date": "2026-08-28", "city": "Chicago, US", "city_zh": "美國/芝加哥", "city_kr": "시카고", "note": "" }
@@ -525,10 +581,20 @@
   },
   "Love Maze": {
     "title": "Love Maze",
-    "album": "LOVE YOURSELF 轉 'Tear' (2018)",
+    "album": "LOVE YOURSELF 轉 'Tear'",
+    "release_yrmn": "2018-05",
     "count": 1,
     "history": [
      { "date": "2026-09-02", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+    ]
+  },
+    "HOME": {
+    "title": "HOME",
+    "album": "MAP OF THE SOUL : PERSONA",
+    "release_yrmn": "2019-04",
+    "count": 1,
+    "history": [
+       { "date": "2026-09-05", "city": "Los Angeles, US", "city_zh": "美國/洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   }
  
