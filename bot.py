@@ -172,11 +172,12 @@ async def check_album(interaction: discord.Interaction, album_name: str):
 
     embed = discord.Embed(
         title=album_title_text,
-        description=f"🎶 **該專輯共演唱了 {total_performed_songs} 首**\n\n",
         color=discord.Color.blue()
     )
 
-    song_list_text = ""
+    # 關鍵修改：讓 song_list_text 一開始就帶有「共演唱 X 首」
+    song_list_text = f"🎶 **該專輯共演唱了 {total_performed_songs} 首**\n\n"
+
     for title, count, history, _ in matched_songs:
         song_list_text += f"• **{title}** - `{count} 次`\n"
         
