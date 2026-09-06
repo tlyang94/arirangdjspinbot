@@ -279,7 +279,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     sorted_cities = sorted(city_grouped_records.items(), key=get_min_date_for_city)
 
     embed = discord.Embed(
-        title=f"🏙️ {matched_search_label} 共 {total_shows} 場 / {total_song_count} 首",
+        title=f"🏙️ {city_name} 共 {total_shows} 場 / {total_song_count} 首",
         color=discord.Color.green()
     )
 
