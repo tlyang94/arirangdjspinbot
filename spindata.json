@@ -9,7 +9,7 @@
     "history": [
       { "date": "2026-04-09", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
       { "date": "2026-06-27", "city": "Madrid, Spain", "city_zh": "西班牙|馬德里", "city_kr": "마드리드", "note": "" },
- { "date": "2026-08-28", "city": Chicago, IL, US", "city_zh": "美國|伊利諾州|芝加哥", "city_kr": "시카고", "note": "" }
+ { "date": "2026-08-28", "city": "Chicago, IL, US", "city_zh": "美國|伊利諾州|芝加哥", "city_kr": "시카고", "note": "" }
     ]
   },
   "I NEED U": {
@@ -588,7 +588,7 @@
      { "date": "2026-09-02", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
-    "HOME": {
+  "HOME": {
     "title": "HOME",
     "album": "MAP OF THE SOUL : PERSONA",
     "release_yrmn": "2019-04",
