@@ -124,84 +124,93 @@ async def check_song(interaction: discord.Interaction, song_name: str):
     await interaction.followup.send(embed=embed, ephemeral=True)
 
 
-# ==================== 指令 2：/album (搜尋專輯) ====================
-@bot.tree.command(name="album", description="查詢特定專輯曲目的演唱城市與次數")
-@app_commands.describe(album_name="輸入專輯名稱 (關鍵字皆可)")
+# ==================== 指令 2：/album (搜尋專輯或系列專輯名稱) ====================
+@bot.tree.command(name="album", description="搜尋專輯名稱或專輯系列 (例如: 花樣年華, Love Yourself)")
+@app_commands.describe(album_name="輸入專輯名稱或系列關鍵字")
 async def check_album(interaction: discord.Interaction, album_name: str):
     await interaction.response.defer(ephemeral=True)
     query = album_name.lower().strip()
-    matched_songs = []
-    matched_album_display = ""
-    matched_release_yrmn = ""
+    
+    # 紀錄匹配到的專輯與對應的歌曲資料
+    matched_albums = set()
+    album_songs_map = {} # { "專輯名稱(發行年月)": [ (song_display, history_list), ... ] }
+    total_song_count = 0
 
     for song_title, info in song_data.items():
-        album_def = info.get("album", "")
-        album_zh = info.get("album_zh", "")
-        album_en = info.get("album_en", "")
-        album_kr = info.get("album_kr", "")
+        song_display = get_display_text(info.get('title_zh'), info.get('title_kr'), info.get('title_en'), info.get('title'), song_title)
         
-        if (album_def and query in album_def.lower()) or \
-           (album_zh and query in album_zh.lower()) or \
+        album_zh = info.get('album_zh', '')
+        album_kr = info.get('album_kr', '')
+        album_en = info.get('album_en', '')
+        album_def = info.get('album', '')
+        release_yrmn = info.get('release_yrmn', '')
+        
+        # 檢查關鍵字是否出現在任何語言的專輯名稱中 (支援前綴與系列模糊比對)
+        if (album_zh and query in album_zh.lower()) or \
+           (album_kr and query in album_kr.lower()) or \
            (album_en and query in album_en.lower()) or \
-           (album_kr and query in album_kr.lower()):
+           (album_def and query in album_def.lower()):
             
-            if not matched_album_display:
-                matched_album_display = get_display_text(album_zh, album_kr, album_en, album_def, album_name)
-                matched_release_yrmn = info.get("release_yrmn", "")
-                
-            song_display = get_display_text(info.get('title_zh'), info.get('title_kr'), info.get('title_en'), info.get('title'), song_title)
-            history = sorted(info.get("history", []), key=lambda x: x.get('date', ''))
+            # 取得最佳顯示專輯名
+            album_display = get_display_text(album_zh, album_kr, album_en, album_def, "未知專輯")
+            album_key = f"{album_display} ({release_yrmn})" if release_yrmn else album_display
             
-            # 使用發行年月排序；若無發行年月則使用首次演唱日期
-            sort_key = get_sort_key(info)
-            matched_songs.append((song_display, info.get("count", 0), history, sort_key))
+            matched_albums.add(album_key)
+            
+            if album_key not in album_songs_map:
+                album_songs_map[album_key] = []
+            
+            album_songs_map[album_key].append((song_display, info.get("history", [])))
+            total_song_count += 1
 
-    if not matched_songs:
-        await interaction.followup.send(f"❌ 找不到與 `{album_name}` 相關的專輯歌曲資料。", ephemeral=True)
+    if not album_songs_map:
+        await interaction.followup.send(f"❌ 找不到與專輯/系列 `{album_name}` 相關的紀錄。", ephemeral=True)
         return
 
-# 專輯內的曲目依發行年月/日期排序
-    matched_songs = sorted(matched_songs, key=lambda x: x[3])
-
-    # 計算該專輯共演唱幾首歌曲
-    total_performed_songs = len(matched_songs)
-
-    album_title_text = f"💿 專輯《{matched_album_display}》"
-    if matched_release_yrmn:
-        album_title_text += f" ({matched_release_yrmn})"
-    album_title_text += " 演唱統計"
-
+    # 建立 Embed 回應
     embed = discord.Embed(
-        title=album_title_text,
+        title=f"💿 搜尋專輯：{album_name} 共 {len(matched_albums)} 張相關專輯 / {total_song_count} 首歌曲)",
         color=discord.Color.blue()
     )
 
-    # 關鍵修改：讓 song_list_text 一開始就帶有「共演唱 X 首」
-    song_list_text = f"🎶 **該專輯共演唱了 {total_performed_songs} 首**\n\n"
-
-    for title, count, history, _ in matched_songs:
-        song_list_text += f"• **{title}** - `{count} 次`\n"
+    album_text = ""
+    
+    # 按照專輯名稱排序輸出
+    for album_key in sorted(album_songs_map.keys()):
+        album_text += f"💿 **【{album_key}】**\n"
+        songs = album_songs_map[album_key]
         
-        if history:
-            for h in history:
-                city_display = get_display_text(h.get('city_zh'), h.get('city_kr'), h.get('city_en'), h.get('city'), "未知城市")
-                note_display = f" — *{h.get('note')}*" if h.get('note') else ""
-                song_list_text += f"  └ `{h.get('date')}` {city_display}{note_display}\n"
-        else:
-            song_list_text += "  └ *(無演唱場次紀錄)*\n"
+        for song_display, history in songs:
+            album_text += f"  └ **{song_display}**\n"
+            
+            if history:
+                # 演唱紀錄按日期排序
+                sorted_history = sorted(history, key=lambda x: x.get('date', ''))
+                for h in sorted_history:
+                    date = h.get('date', '未知日期')
+                    city_def = h.get('city', '')
+                    city_zh = h.get('city_zh', '')
+                    clean_city = city_zh.split("|")[-1] if "|" in city_zh else city_zh
+                    city_display = f"{clean_city} ({city_def})" if clean_city and city_def else (clean_city or city_def or "未知城市")
+                    note = f" — *{h.get('note')}*" if h.get('note') else ""
+                    
+                    album_text += f"      📅 `{date}` @ {city_display}{note}\n"
+            else:
+                album_text += f"      *(尚無巡演首次演唱紀錄)*\n"
         
-        song_list_text += "\n"
+        album_text += "\n"
 
-    if len(song_list_text) > 4000:
-        song_list_text = song_list_text[:3950] + "\n\n*(內容過長，已截斷部分場次...)*"
+    # 防止訊息超越 Discord Embed 4000 字限制
+    if len(album_text) > 4000:
+        album_text = album_text[:3950] + "\n\n*(內容過長，已截斷部分紀錄...)*"
 
-    embed.description = song_list_text
+    embed.description = album_text
     await interaction.followup.send(embed=embed, ephemeral=True)
 
 
-# ==================== 指令 3：/city (搜尋國家/城市，依城市與日期分組顯示) ====================
-@bot.tree.command(name="city", description="查詢特定國家或城市演唱歌曲 (按城市與日期群組顯示)")
-@app_commands.describe(city_name="輸入國家或城市名稱 (例如: 美國, 洛杉磯, Goyang)")
+# ==================== 指令 3：/city (搜尋國家/城市，依城市與日期群組並按日期排序) ====================
+@bot.tree.command(name="city", description="查詢特定國家或城市（或美國州名）演唱歌曲")
+@app_commands.describe(city_name="輸入國家或城市名稱 (例如: 南韓, 馬德里, Stanford)")
 async def check_city(interaction: discord.Interaction, city_name: str):
     await interaction.response.defer(ephemeral=True)
     query = city_name.lower().strip()
@@ -264,7 +273,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     total_shows = sum(len(dates) for dates in city_grouped_records.values())
 
     embed = discord.Embed(
-        title=f"🏙️ 搜尋國家/區域/城市：{matched_search_label} 共 {total_shows} 場 / {total_song_count} 首",
+        title=f"🏙️ 搜尋區域/城市：{matched_search_label} (共 {total_shows} 場 / {total_song_count} 首次)",
         color=discord.Color.green()
     )
 
@@ -272,13 +281,18 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     for city_display_name, dates in city_grouped_records.items():
         city_list_text += f"📍 **{city_display_name}**\n"
         
-        # 日期由舊到新排序
-        for date in sorted(dates.keys()):
+        # 💡 按日期排序：
+        # sorted(dates.keys()) -> 由舊到新 (例如: 2026-05-16 -> 2026-05-17 -> 2026-05-19)
+        # 若想改為「由新到舊」，請改為：sorted(dates.keys(), reverse=True)
+        sorted_dates = sorted(dates.keys())
+        
+        for date in sorted_dates:
             city_list_text += f"  📅 `{date}`\n"
             songs = dates[date]
             for song_display, album_with_release, note in songs:
                 note_display = f" — *{note}*" if note else ""
                 city_list_text += f"     └ **{song_display}** `[{album_with_release}]`{note_display}\n"
+        
         city_list_text += "\n"
 
     # 防止訊息超越 Discord Embed 4000 字限制
