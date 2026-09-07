@@ -109,7 +109,7 @@ async def check_song(interaction: discord.Interaction, song_name: str):
     )
     # 將 inline 皆設為 False，演唱次數就會固定排在專輯的下一行
     embed.add_field(name="收錄專輯", value=album_display, inline=False)
-    embed.add_field(name="演唱次數", value=f"**{info.get('count', 0)} 次**", inline=False)
+    embed.add_field(name="演唱次數", value=f"{info.get('count', 0)} 次", inline=False)
     
     # 歷史場次按日期舊到新排序
     history_list = sorted(info.get('history', []), key=lambda x: x.get('date', ''))
@@ -169,7 +169,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
 
     # 建立 Embed 回應
     embed = discord.Embed(
-        title=f"💿 搜尋專輯：{album_name} 共 {len(matched_albums)} 張相關專輯 / {total_song_count} 首歌曲)",
+        title=f"💿 搜尋專輯：{album_name} 共 {len(matched_albums)} 張相關專輯 / {total_song_count} 首已演唱歌曲)",
         color=discord.Color.blue()
     )
 
@@ -194,7 +194,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
                     city_display = f"{clean_city} ({city_def})" if clean_city and city_def else (clean_city or city_def or "未知城市")
                     note = f" — *{h.get('note')}*" if h.get('note') else ""
                     
-                    album_text += f"      📅 `{date}` @ {city_display}{note}\n"
+                    album_text += f"`{date}` @ {city_display}{note}\n"
             else:
                 album_text += f"      *(尚無巡演首次演唱紀錄)*\n"
         
@@ -279,7 +279,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     sorted_cities = sorted(city_grouped_records.items(), key=get_min_date_for_city)
 
     embed = discord.Embed(
-        title=f"🏙️ {city_name} 共 {total_shows} 場 / {total_song_count} 首",
+        title=f"🏙️ 搜尋與{city_name}相符 共{total_shows}場 / {total_song_count}首",
         color=discord.Color.green()
     )
 
@@ -287,7 +287,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     
     # 4. 組成輸出格式
     for city_display_name, dates_dict in sorted_cities:
-        result_text += f"**{city_display_name}**\n"
+        result_text += f"📍 **{city_display_name}**\n"
         
         # 城市內部的日期依時間由舊到新排序
         sorted_dates = sorted(dates_dict.keys())
@@ -340,7 +340,7 @@ async def check_count(interaction: discord.Interaction, times: int):
     matched_songs = sorted(matched_songs, key=lambda x: x[3])
 
     embed = discord.Embed(
-        title=f"📊 演唱次數為 {times} 次的歌曲共 {len(matched_songs)} 首",
+        title=f"📊 演唱{times}次的歌曲 共 {len(matched_songs)} 首",
         color=discord.Color.gold()
     )
 
