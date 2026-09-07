@@ -51,7 +51,8 @@
     "count": 2,
     "history": [
       { "date": "2026-04-12", "city": "Goyang, South Korea", "city_zh": "南韓|高陽", "city_kr": "고양", "note": "" },
-      { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" }
+      { "date": "2026-05-10", "city": "Mexico City, Mexico", "city_zh": "墨西哥|墨西哥城", "city_kr": "멕시코시티", "note": "" },
+     { "date": "2026-09-06", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   },
   "RUN": {
@@ -595,6 +596,16 @@
     "count": 1,
     "history": [
        { "date": "2026-09-05", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
+    ]
+  },
+  "Whalien 52": {
+    "title": "Whalien 52",
+    "album": "화양연화 pt.2",
+    "album_zh": "花樣年華 pt.2",
+    "release_yrmn": "2015-11",
+    "count": 1,
+    "history": [
+       { "date": "2026-09-06", "city": "Los Angeles, CA, US", "city_zh": "美國|加州|洛杉磯", "city_kr": "로스앤젤레스", "note": "" }
     ]
   }
  
