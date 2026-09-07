@@ -169,7 +169,7 @@ async def check_album(interaction: discord.Interaction, album_name: str):
 
     # 建立 Embed 回應
     embed = discord.Embed(
-        title=f"💿 搜尋專輯：{album_name} 共 {len(matched_albums)} 張相關專輯 / {total_song_count} 首已演唱歌曲)",
+        title=f"💿 搜尋 與{album_name}相關 共 {len(matched_albums)} 張專輯 / {total_song_count} 首已演唱歌曲",
         color=discord.Color.blue()
     )
 
@@ -279,7 +279,7 @@ async def check_city(interaction: discord.Interaction, city_name: str):
     sorted_cities = sorted(city_grouped_records.items(), key=get_min_date_for_city)
 
     embed = discord.Embed(
-        title=f"🏙️ 搜尋與{city_name}相符 共{total_shows}場 / {total_song_count}首",
+        title=f"🏙️ 搜尋 與{city_name}相符 共{total_shows}場 / {total_song_count}首已演唱歌曲",
         color=discord.Color.green()
     )
 
